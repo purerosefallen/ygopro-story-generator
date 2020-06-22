@@ -1,0 +1,32 @@
+{
+  "name": "ygopro-story-generator",
+  "version": "1.0.0",
+  "description": "Generate duel story from SRVPro cloud replay",
+  "main": "run.js",
+  "dependencies": {
+    "@types/node": "^14.0.13",
+    "@types/underscore": "^1.10.1",
+    "sqlite": "^4.0.11",
+    "sqlite3": "^4.2.0",
+    "underscore": "^1.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node run.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purerosefallen/ygopro-story-generator.git"
+  },
+  "keywords": [
+    "ygopro",
+    "srvpro",
+    "story"
+  ],
+  "author": "Nanahira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purerosefallen/ygopro-story-generator/issues"
+  },
+  "homepage": "https://github.com/purerosefallen/ygopro-story-generator#readme"
+}
