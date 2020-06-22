@@ -106,3 +106,4 @@ dist
 *.cdb
 *.js
 *.js.map
+/ygopro
