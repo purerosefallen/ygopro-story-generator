@@ -12,7 +12,10 @@ export class ReplayFetcher {
 		this.version = version;
 		this.helper = new YGOProMessagesHelper();
 		this.helper.addHandler("STOC_ERROR_MSG", async (buffer: Buffer, info: any, datas: Buffer[], params: any) => {
-			return false;
+			return true;
+		}, true, 1);
+		this.helper.addHandler("STOC_CHAT", async (buffer: Buffer, info: any, datas: Buffer[], params: any) => {
+			return info.player > 3;
 		}, true, 1);
 	}
 	connect(ip: string, port: number): Promise<void> {
